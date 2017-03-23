@@ -1,0 +1,61 @@
+@import "reset";
+@import "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "vars-social-colors";
+
+
+section {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	h1 {
+	font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+	}
+
+	ul {
+		li {
+			margin-top: 10px;
+            
+			a {
+			text-align: center;
+			width: 40px;
+			height: 40px;
+			font-size: 30px;
+			padding: 10px;
+			border-radius: 50%;
+			color: white;
+			display: inline-block;
+			margin: 5px;
+			line-height: 40px;
+            
+            &:hover {
+                transform: scale(1.1,1.1);
+    	    }
+
+			&.ion-social-facebook {
+				background: $facebook;
+			}
+
+			&.ion-social-twitter {
+				background: $twitter;
+			}
+
+			&.ion-social-linkedin {
+				background: $linkedin;
+			}
+
+			&.ion-social-googleplus {
+				background: $googleplus;
+			}
+
+			&.ion-social-pinterest {
+				background: $pinterest;
+			}
+
+			}
+		}
+	}
+}
